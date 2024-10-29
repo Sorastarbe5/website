@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet"  href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+         <a href="#home" class="logo">SHOB</a>
+        <a href="#home">Home</a>
+        <a href="#about-me">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a >
+    </nav>
+    
+    <header class="header" id="home">
+        <div class="profile-pic">
+            <img src="ada.jpg" alt="Profile Picture">
+        </div>
+        <h1>Halo, Ini Aku</h1>
+        <h2>A. Shohibul Ardli Khotim</h2>
+        <p>Dan Saya Seorang Mahasiswa</p>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </header>
+        <section class="section" id="about-me">
+            <div class="container about-me-container">
+                <div class="about-images">
+                    <img src="me.png" alt="A. Shohibul Ardli Khotim">
+                </div>
+                    <div class="content">
+                    <h2>About Me</h2>
+                    <div class="about-icons">
+                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="text-content">
+                        <p>Nama saya A. Shohibul Ardli Khotim dan saya seorang pelajar. Saya tertarik dengan pengembangan dan desain web. Saya menikmati mempelajari teknologi baru dan menerapkannya untuk menciptakan proyek inovatif.<br><br> Berdedikasi untuk terus mengembangkan keahlian saya. Tujuan saya adalah menciptakan proyek yang tidak hanya menampilkan keunggulan teknis namun juga memberikan nilai nyata kepada pengguna. Saya mengagumi bagaimana teknologi dapat digunakan untuk meningkatkan pengalaman pengguna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section class="section" id="portfolio">
+        <h2>Portofolio</h2>
+        <p>Gambar di bawah merupakan tampilan blog<br>buat pengalaman yang lebih baik dengan desain yang menarik</p>
+        <div class="portfolio-container">
+            <div class="project">
+                <img src="a.jpg" alt="Project 1 Image">
+                <p>Project 1</p>
+                <p>Gunakan keahlianmu untuk membuat project website pertamamu, berikan pengalaman terbaik.</p>
+            </div>
+            <div class="project">
+                <img src="b.jpg" alt="Project 2 Image">
+                <p>Project 2</p>
+                <p>ilustrasi layar komputer dengan berbagai ikon dan elemen yang terkait dengan sistem manajemen konten (CMS).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Hubungi saya untuk pertanyaan apapau!</p>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-phone"></i> +62 878-6037-8348</p>
+                <p><i class="fa-solid fa-envelope"></i> sorastarb5@gmail.com</p>
+                <p><i class="fa-solid fa-map-marker-alt"></i> Ambunten, Sumenep, Jawa Timur, Indonesia </p>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>

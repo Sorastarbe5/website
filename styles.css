@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0f2027;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 1250px;
+    text-align: left;
+    color: #fff;
+}
+
+.navbar, .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    background-color: #0f2027;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.navbar a, .social-icons a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 150%;
+    transition: color 0.3s, transform 0.3s;
+    text-align: right;
+}
+
+.navbar a:hover, .social-icons a:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+.header, .section {
+width: 100%;
+    min-height: 100vh;
+    padding: 120px 20px;
+    background: #0f2027; /* Dark background similar to the other sections */
+    color: #f0f0f0; /* Light text for contrast */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 3px solid #1e90ff;
+    border-radius: 15px;
+
+}
+
+.profile-pic {
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #1e90ff;
+    box-shadow: 0px 0px 15px 5px rgba(30,144,255,0.5);
+    margin-top: 100px;
+}
+
+.header h1 {
+    font-size: 54px;
+}
+
+.header h2 {
+    font-size: 28px;
+    color: #1e90ff;
+    margin: 10px 0;
+}
+
+.header p {
+    font-size: 18px;
+    color: #b0b0b0;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #b0b0b0;
+    max-width: 700px;
+    margin: 25px auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons a {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    line-height: 60px;
+    margin: 0 15px;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease, transform 0.2s;
+}
+
+.icons a:hover {
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.7);
+}
+
+.icons a:nth-child(1):hover {
+    background-color: #C13584;
+}
+
+.icons a:nth-child(2):hover {
+    background-color: #3b5998;
+}
+
+.icons a:nth-child(3):hover {
+    background-color: #25D366;
+}
+
+.profile-pic:hover {
+    transform: translateY(-10px);
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 20px;
+    background: #0f2027; 
+    color: #f0f0f0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-bottom: 3px solid #1e90ff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgba(44, 40, 40, 0.3);
+}
+
+
+
+.profile-pic {
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #1e90ff;
+    box-shadow: 0px 0px 15px 5px rgba(30,144,255,0.5);
+    margin-top: 100px;
+}
+
+.header h1 {
+    font-size: 54px;
+}
+
+.header h2 {
+    font-size: 28px;
+    color: #1e90ff;
+    margin: 10px 0;
+}
+
+.header p {
+    font-size: 18px;
+    color: #b0b0b0;
+    max-width: 700px;
+    margin: 25px auto;
+}
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-images {
+    flex: 1;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+.content h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    margin: 8px auto;
+    border-bottom: 3px solid #0fd2e0;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 50px; 
+}
+
+.about-icons i {
+    font-size: 40px; 
+    color: #002a5a;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.about-icons i:hover {
+    color: #27ebe1;
+    transform: scale(1.2);
+}
+
+.text-content p {
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    margin: 30px 0 45px 0;
+    max-width: 498px;
+    text-align: left; /* Aligns the text to the left */
+    word-spacing: 1px; /* Adds a bit of space between words */
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;  /* Ensure this matches other sections */
+    max-width: 1200px; /* Set a maximum width if desired */
+    margin: 0 auto -50px auto;  /* Center-aligns the container */
+    box-sizing: border-box;  /* Includes padding and border in the element's total width and height */
+}
+
+.section p {
+    color: #fff; /* Replace with your desired color */
+}
+
+.section h2 {
+    color: #0fd2e0; /* Replace with your desired color */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 50%; /* Adjust the width of the line */
+    height: 3px; /* Adjust the height of the line */
+    background-color: #0fd2e0; /* Matches the text color */
+    margin: 0 auto; /* Center-aligns the line */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-container p {
+    margin-bottom: 15px; /* Adds space between paragraphs */
+    line-height: 1.4; /* Keeps the line spacing consistent */
+}
+
+.project {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+    margin: 10px;
+    margin: -10px 10px 10px 10px; 
+}
+
+.project p {
+    color: #fff;
+    margin-top: -10px; /* Negative top margin to lift the text closer to the image */
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between form and info */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #012731, #02363d); /* Gradient from dark green to blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Adds space between form and info sections */
+    color: #ecf0f1;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #112130;
+    color: #ecf0f1;
+}
+
+.contact-form button {
+    background: #08478f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #04429e;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #ecf0f1;
+}
+
+.contact-info i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info p {
+    text-align: center;
+}
+
+/* Media query for larger screens */
+@media(min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .contact-form, .contact-info {
+        margin-bottom: 0; /* Remove margin when in row layout */
+    }
+}
